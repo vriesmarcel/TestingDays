@@ -18,7 +18,7 @@ namespace Tests.Playwright
             var productPage = new ProductPage(Page);
 
             await homePage.GotoHomepage(StartPage);
-            await homePage.SelectProduct("Artist pic 09/25/2025 John");
+            await homePage.SelectProduct("John Egbert Live");
 
             await productPage.GotoCheckout();
 
@@ -34,10 +34,10 @@ namespace Tests.Playwright
             var productPage = new ProductPage(Page);
             await homePage.GotoHomepage(StartPage);
 
-            await homePage.SelectProduct("Artist pic 12/25/2025 The");
+            await homePage.SelectProduct("John Egbert Live");
             await productPage.BacktoCatalog();
 
-            await homePage.SelectProduct("Artist pic 09/25/2025 John");
+            await homePage.SelectProduct("The State of Affairs");
             await productPage.GotoCheckout();
 
             var checkoutPage = new CheckoutPage(Page);
@@ -53,12 +53,13 @@ namespace Tests.Playwright
             var productPage = new ProductPage(Page);
 
             await homePage.GotoHomepage(StartPage);
-            await homePage.SelectProduct("Artist pic 09/25/2025 John");
+            await homePage.SelectProduct("John Egbert Live");
 
             await productPage.BacktoCatalog();
 
-            await homePage.SelectProduct("Artist pic 12/25/2025 The", 3);
-            await productPage.BacktoCatalog();
+            await homePage.SelectProduct("The State of Affairs", 3);
+            await productPage.GotoCheckout();
+
             var checkoutPage = new CheckoutPage(Page);
             await checkoutPage.Checkout();
         }
