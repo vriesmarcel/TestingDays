@@ -2,7 +2,8 @@ using Microsoft.Playwright;
 using Microsoft.Playwright.NUnit;
 using NUnit.Framework;
 using Tests.Playwright.HelperClasses;
-namespace Tests.Playwright.Solid.PageObjects
+using Tests.Playwright.Solid.PageObjects;
+namespace Tests.Playwright
 {
     [TestFixture]
     public class SimpleTests : PageTest
@@ -62,15 +63,6 @@ namespace Tests.Playwright.Solid.PageObjects
             await checkoutPage.Checkout();
         }
 
-        /* here you find the methods extracted from the recordings, to make the test so called DRY */
-        #region DRY Methods 
 
-
-
-
-
-
-
-        #endregion
     }
 }
