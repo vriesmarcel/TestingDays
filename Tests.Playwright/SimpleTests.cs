@@ -7,7 +7,7 @@ using Tests.Playwright.Solid.PageObjects;
 namespace Tests.Playwright
 {
     [TestFixture]
-    public class SimpleTests : PageTest
+    public class SimpleTests : PlaywrightTestWithArtifact
     {
         public string StartPage = "https://globoticket-frontend-dpfbe7hxa6d2bdab.westeurope-01.azurewebsites.net/";
 
