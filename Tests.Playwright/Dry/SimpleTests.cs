@@ -15,7 +15,7 @@ namespace Tests.Playwright.Dry
         {
             //insert Generated code here
             await GotoHomepage();
-            await SelectProduct("Artist pic 09/25/2025 John");
+            await SelectProduct("John Egbert Live");
             await GotoCheckout();
             await Checkout();
         }
@@ -25,9 +25,9 @@ namespace Tests.Playwright.Dry
         {
             //insert Generated code here
             await GotoHomepage();
-            await SelectProduct("Artist pic 12/25/2025 The");
+            await SelectProduct("John Egbert Live");
             await BacktoCatalog();
-            await SelectProduct("Artist pic 09/25/2025 John");
+            await SelectProduct("The State of Affairs");
             await GotoCheckout();
             await Checkout();
 
@@ -38,9 +38,9 @@ namespace Tests.Playwright.Dry
         {
             //insert Generated code here
             await GotoHomepage();
-            await SelectProduct("Artist pic 09/25/2025 John");
+            await SelectProduct("John Egbert Live");
             await BacktoCatalog();
-            await SelectProduct("Artist pic 12/25/2025 The", 3);
+            await SelectProduct("The State of Affairs", 3);
             await GotoCheckout();
             await Checkout();
         }
