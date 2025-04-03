@@ -1,9 +1,7 @@
 # GloboTicket Demo Application
 
-This is a demo application used for the Visual Studio Live conference in Redmond.
-It supports the session [writing maintainable test automation](https://sessionize.com/app/speaker/session/431280)
+This is a demo application used for the Swiss Testing Days conference in Zurich.
+It supports the session [writing maintainable test automation](https://sessionize.com/s/marcelv/maintainable-and-scalable-test-automation-with-pla/122943))
 
 # Session abstract:
-How well do you test your application or Web site? Are you still testing your applications or sites manually and does that take a lot of time? Do you find it hard to create and maintain automated tests for your applications? Have you created automated tests, but do you find them hard to maintain? This session will teach you how to build maintainable automated test suites using various technologies like Selenium or Appium and integrate them in your delivery pipeline to give you a holistic view of your current sprint in terms of test completion and coverage.
-In this session, you'll learn to build test suites in such a way that they are maintainable by default. 
-This session will introduce the concepts like Page Objects, DRY and DAMP tests
+Do you find it hard to create and maintain automated tests for your applications? Have you created automated tests but find them hard to maintain? Are you looking for ways to speed up and scale your test runs so you have faster results? This session will teach you how to build maintainable automated test suites using Microsoft Playwright services on Azure integrated into your CI/CD workflows on Azure DevOps or GitHub. In this session, you'll learn to build maintainable test suites by default. It will introduce concepts like Page Objects, DRY, and DAMP tests. You will also learn how to apply these patterns to Playwright and use cloud services to scale up and speed up your tests.
