@@ -19,11 +19,11 @@ namespace Tests.Playwright
         public async Task BuyTwoProducts()
         {
             await Page.GotoAsync("https://globoticket-frontend-dpfbe7hxa6d2bdab.westeurope-01.azurewebsites.net/");
-            await Page.GetByRole(AriaRole.Row, new() { Name = "Artist pic 10/02/2025 John" }).GetByRole(AriaRole.Link).ClickAsync();
+            await Page.GetByRole(AriaRole.Row, new() { Name = "John Egbert Live" }).GetByRole(AriaRole.Link).ClickAsync();
             await Page.GetByRole(AriaRole.Button, new() { Name = "PLACE ORDER" }).ClickAsync();
             await Page.GetByRole(AriaRole.Link, new() { Name = "Back to event catalog" }).ClickAsync();
          
-            await Page.GetByRole(AriaRole.Row, new() { Name = "Artist pic 01/02/2026 The" }).GetByRole(AriaRole.Link).ClickAsync();
+            await Page.GetByRole(AriaRole.Row, new() { Name = "The State of Affairs" }).GetByRole(AriaRole.Link).ClickAsync();
             await Page.GetByRole(AriaRole.Button, new() { Name = "PLACE ORDER" }).ClickAsync();
 
             await Page.GetByRole(AriaRole.Link, new() { Name = "CHECKOUT" }).ClickAsync();
@@ -50,11 +50,11 @@ namespace Tests.Playwright
         {
             //insert Generated code here
             await Page.GotoAsync("https://globoticket-frontend-dpfbe7hxa6d2bdab.westeurope-01.azurewebsites.net/");
-            await Page.GetByRole(AriaRole.Row, new() { Name = "Artist pic 10/02/2025 John" }).GetByRole(AriaRole.Link).ClickAsync();
+            await Page.GetByRole(AriaRole.Row, new() { Name = "John Egbert Live" }).GetByRole(AriaRole.Link).ClickAsync();
             await Page.GetByRole(AriaRole.Button, new() { Name = "PLACE ORDER" }).ClickAsync();
             await Page.GetByRole(AriaRole.Link, new() { Name = "Back to event catalog" }).ClickAsync();
 
-            await Page.GetByRole(AriaRole.Row, new() { Name = "Artist pic 01/02/2026 The" }).GetByRole(AriaRole.Link).ClickAsync();
+            await Page.GetByRole(AriaRole.Row, new() { Name = "The State of Affairs" }).GetByRole(AriaRole.Link).ClickAsync();
             await Page.GetByRole(AriaRole.Combobox).SelectOptionAsync(new[] { "3" });
             await Page.GetByRole(AriaRole.Button, new() { Name = "PLACE ORDER" }).ClickAsync();
 
